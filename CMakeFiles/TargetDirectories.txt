@@ -1,0 +1,3 @@
+/Users/bhawanshsingh/Desktop/task/CMakeFiles/StudentManagementSystem.dir
+/Users/bhawanshsingh/Desktop/task/CMakeFiles/edit_cache.dir
+/Users/bhawanshsingh/Desktop/task/CMakeFiles/rebuild_cache.dir
