@@ -1,1 +1,0 @@
-/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/StudentManagementSystem.dir/src/main.cpp.o CMakeFiles/StudentManagementSystem.dir/src/core/Logger.cpp.o CMakeFiles/StudentManagementSystem.dir/src/service/StudentService.cpp.o CMakeFiles/StudentManagementSystem.dir/src/ui/CLI.cpp.o -o StudentManagementSystem
