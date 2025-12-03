@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Student Management System",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "src/main.cpp",
+                "src/ui/CLI.cpp",
+                "src/core/Logger.cpp",
+                "src/service/StudentService.cpp",
+                "-o",
+                "student_app"
+            ],
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "detail": "Builds the Student Management System"
+        }
+    ]
+}
