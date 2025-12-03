@@ -79,6 +79,7 @@ namespace UI {
         std::string query;
         std::cout << "Enter Name, Email or ID to search: ";
         std::getline(std::cin, query);
+        query = Core::Utils::trim(query);
 
         auto results = studentService->searchStudents(query);
         if (results.empty()) {
@@ -96,6 +97,7 @@ namespace UI {
         std::string id;
         std::cout << "Enter Student ID to update: ";
         std::getline(std::cin, id);
+        id = Core::Utils::trim(id);
 
         auto student = studentService->getStudentById(id);
         if (!student) {
@@ -143,6 +145,7 @@ namespace UI {
         std::string id;
         std::cout << "Enter Student ID to delete: ";
         std::getline(std::cin, id);
+        id = Core::Utils::trim(id);
 
         if (char c; std::cout << "Are you sure? (y/n): " && std::cin >> c && (c == 'y' || c == 'Y')) {
             studentService->deleteStudent(id);

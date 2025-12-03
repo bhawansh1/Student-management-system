@@ -47,6 +47,17 @@ namespace Core {
             }
             return tokens;
         }
+
+        static std::string trim(const std::string& str) {
+            const auto strBegin = str.find_first_not_of(" \t\n\r\f\v");
+            if (strBegin == std::string::npos)
+                return "";
+
+            const auto strEnd = str.find_last_not_of(" \t\n\r\f\v");
+            const auto strRange = strEnd - strBegin + 1;
+
+            return str.substr(strBegin, strRange);
+        }
     };
 
 }
